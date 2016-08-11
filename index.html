@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Drake Equation</h1>
+    </header>
+    <div class="calc-wrap">
+      <div id="info-default">
+        <p>The Drake equation is a probabilistic argument used to arrive at an estimate of the number of active, communicative extraterrestrial civilizations in the Milky Way galaxy.</p>
+      </div>
+      <div class="info-box">
+        <div id="info-R" class="info">
+          <img src="assets/images/star-formation.jpg" height="300px">
+          <p>R is the average rate of star formation in our galaxy.</p>
+        </div>
+        <div id="info-fp" class="info">
+          <img src="assets/images/saturn.jpg" height="300px">
+          <p>f<sub>p</sub> is the fraction of those stars that have planets.</p>
+        </div>
+        <div id="info-ne" class="info">
+          <img src="assets/images/mars.jpg" height="300px">
+          <p>n<sub>e</sub> is the average number of planets that can potentially support life per star that has planets.</p>
+        </div>
+        <div id="info-fl" class="info">
+          <img src="assets/images/earth.jpg" height="300px">
+          <p>f<sub>l</sub> is the fraction of planets that could support life that actually develop life at some point.</p>
+        </div>
+        <div id="info-fi" class="info">
+          <img src="assets/images/astronaut.jpg" height="300px">
+          <p>f<sub>i</sub> is the fraction of planets with life that actually go on to develop intelligent life (civilizations).</p>
+        </div>
+        <div id="info-fc" class="info">
+          <img src="assets/images/seti.jpg" height="300px">
+          <p>f<sub>c</sub> is the fraction of civilizations that develop a technology that releases detectable signs of their existence into space.</p>
+        </div>
+        <div id="info-L" class="info">
+          <img src="assets/images/coruscant.png" height="300px">
+          <p>L is the length of time for which such civilizations release detectable signals into space.</p>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="var-box">
+          <h3>R</h3>
+          <input class="drake-input" type="number" min="0" id="inputR" value="7"/>
+        </div>
+        <div class="var-box">
+          <h3>f<sub>p</sub></h3>
+          <input class="drake-input" type="number" max="1" min="0" id="inputFp" value="0.95"/>
+        </div>
+        <div class="var-box">
+          <h3>n<sub>e</sub></h3>
+          <input class="drake-input" type="number" min="0" id="inputNe" value="2"/>
+        </div>
+        <div class="var-box">
+          <h3>f<sub>l</sub></h3>
+          <input class="drake-input" type="number" max="1" min="0" id="inputFl" value="0.5"/>
+        </div>
+        <div class="var-box">
+          <h3>f<sub>i</sub></h3>
+          <input class="drake-input" type="number" max="1" min="0" id="inputFi" value="0.5"/>
+        </div>
+        <div class="var-box">
+          <h3>f<sub>c</sub></h3>
+          <input class="drake-input" type="number" max="1" min="0" id="inputFc" value="0.05"/>
+        </div>
+        <div class="var-box">
+          <h3>L</h3>
+          <input class="drake-input" type="number" min="0" id="inputL" value="10000"/>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <button class="calcDrake">Calculate</button>
+      </div>
+      <div id="drakeResult"></div>
+    </div>
+      <script src="assets/scripts/jquery-3.1.0.min.js"></script>
+      <script src="assets/scripts/script.js"></script>
+  </body>
+</html>

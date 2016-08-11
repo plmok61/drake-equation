@@ -1,0 +1,88 @@
+body {
+  /*background-image: url("assets/images/hdf-background.jpg");
+  background-size: cover;*/
+  background-color: #000;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+
+button {
+  font-family: 'Orbitron', sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .headline {
+  font-family: 'Orbitron', sans-serif;
+}
+
+sup, sub { vertical-align: 0;
+           position: relative; }
+sup { bottom: 1ex; }
+sub { top: 0.8ex; }
+
+.header {
+  color: red;
+  background-color: black;
+  text-align: center;
+}
+
+.calc-wrap {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.info-box {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.info {
+  display: none;
+}
+
+.inputs {
+  text-align: center;
+}
+
+.var-box {
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+  display: inline-block;
+  color: #fff;
+  width: 90px;
+  height: 160px;
+}
+
+.drake-input {
+  width: 80px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.highlight {
+  background-color: #ecc83e !important;
+}
+
+.calcDrake {
+  width: 200px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border: 7px solid #fff;
+  border-radius: 50px;
+  font-size: 1.3em;
+  margin: 20px 0 20px 0;
+}
+
+#drakeResult {
+  color: #ecc83e;
+  font-size: 3em;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,11 @@
+<script src="tinytest.js"></script>
+<script src="../assets/scripts/jquery-3.1.0.min.js"></script>
+<script src="../assets/scripts/script.js"></script>
+<script>
+  tests({
+    'It should evaluate to 0 is any arguments are 0': function() {
+      calculators.drakeCalc(1,1,0,1,1,1,1);
+      eq(calculators.results[0],0)
+    }
+  })
+</script>
