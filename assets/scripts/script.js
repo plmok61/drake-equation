@@ -15,20 +15,15 @@ $(document).ready( function(){
   for(var i = 0; i < $inputs.length; i++ ) {
     (function(ix) {
       $($inputs[ix]).find('.drake-input').focus(function() {
-        $($infoBox[ix]).slideDown();
+        $(this).closest('div').addClass('highlight');
+        $($infoBox[ix]).fadeIn();
       })
       $($inputs[ix]).find('.drake-input').blur(function() {
-        $($infoBox[ix]).slideUp();
+        $(this).closest('div').removeClass('highlight');
+        $($infoBox[ix]).hide();
       })
     })(i);
   }
-
-  $('.drake-input').focus(function() {
-    $(this).closest('div').addClass('highlight');
-  })
-  $('.drake-input').blur(function() {
-    $(this).closest('div').removeClass('highlight');
-  })
 
   var handlers = {
     gatherDrakeInputs: function() {
